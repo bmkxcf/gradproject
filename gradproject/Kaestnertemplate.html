@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Declares this file as an HTML5 document so browsers know how to interpret it -->
+
+<html lang="en">
+<!--"lang" helps screen readers and search engines -->
+
+<!--
+ Name: Brian Kaestner
+ Date: 2/2/1026
+ Course: Web Design 
+ Description: Boilerplate template
+  This header is for documentation and helps track project details.
+-->
+
+<head>
+  <!-- The <head> contains metadata and resources that are NOT displayed on the page -->
+
+  <meta charset="utf-8">
+  <!-- Sets the character encoding so text displays correctly -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the layout responsive on phones and tablets -->
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="webcontent/favicon.ico">
+
+  <title>My Starter Template</title>
+  <!-- The title that appears in the browser tab -->
+
+  <!-- Custom font used here -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <!-- Connects an external CSS file for styling -->
+ 
+</head>
+
+ <body>
+  <!-- Everything visible to the user goes inside the <body> -->
+
+    <header>
+   <!-- This section will later hold your logo, navigation, or banner -->
+   <div class="site-logo"> 
+      <img src="logo.png" alt="site logo">
+    </div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <nav class="mobile-menu">
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="content.html">Content</a>
+            <ul> 
+              <li><a href="#">Lesson 1</a></li>
+              <li><a href="#">Lesson 2</a></li>
+              <li><a href="#">Lesson 3</a></li> 
+            </ul>      
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+
+    <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="content.html">Content</a>
+            <ul> 
+              <li><a href="#">Lesson 1</a></li>
+              <li><a href="#">Lesson 2</a></li>
+              <li><a href="#">Lesson 3</a></li> 
+            </ul>      
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+   <main>
+      <!-- Title to the body page -->
+    <h1>Hello, world!</h1>
+    <p id="first"></p>
+
+
+   </main>
+
+    <footer>
+     <!-- Footer appears at the bottom of the page and usually contains credits or contact info -->
+    <div class="footer-item">
+      &copy;Kaestner 2026
+      </div>
+    
+    <div class="footer-item">
+     <img src="webcontent/email.png" alt="" class="footer-icon">
+     kaestnerb@missouri.edu
+     </div>
+   
+     <div class="footer-item">
+     <img src="webcontent/phone.png" alt="" class="footer-icon">
+     (555) 123‑4567
+    </div>
+
+     </footer>
+
+   </body>
+ 
+</html>

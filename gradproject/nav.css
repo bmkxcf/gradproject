@@ -1,0 +1,101 @@
+.nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 1rem;
+    padding: 0 1rem;
+}
+.nav  ul li {
+  position: relative; 
+}
+.nav a{
+    color: #283593;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+}
+.nav a:hover{
+    color: #AEEA00;
+}
+.site-logo img {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  height: 60px;
+  width: auto;
+}
+.nav ul li ul {
+  position: absolute;              
+  display: none; 
+  top: 100%;
+  left: 0;
+  padding: 0.5rem 0; 
+  margin: 0;
+  list-style: none;  
+  width: max-content;        
+}
+
+.nav ul li:hover ul {
+  display: block; 
+  border: #283593 solid 1px; 
+  background: linear-gradient(to bottom, #E8ECF9, #F8FAFC);         
+}
+.nav ul li ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;   /* pushes menu BELOW the hamburger */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+#menu-toggle:checked ~ .mobile-menu {
+  display: block;
+}
+#menu-toggle{
+    display: none;
+}
+.hamburger {
+    display: none;      
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #283593;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+@media (max-width: 768px) {
+    nav.nav {
+        display: none;
+    }
+    .mobile-menu ul ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav ul li ul{
+        display: none;
+    }
+    .mobile-menu ul{
+        display: block;
+        list-style: none;
+        flex-direction: column;  
+        background-color: #E8ECF9;
+        padding: 1rem;
+        border: 2px solid #283593;
+        border-radius: 10px;
+    }
+    .mobile-menu a{
+        color: #283593;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: underline;
+        font-size:larger;
+    }
+}
